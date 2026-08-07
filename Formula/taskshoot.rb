@@ -1,25 +1,25 @@
 class Taskshoot < Formula
   desc "Taskshoot task operations CLI (AI-agent friendly)"
   homepage "https://taskshoot.com"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.4.0/taskshoot-aarch64-apple-darwin.tar.xz"
-      sha256 "33614a6493397897db7de1d7bacb96c02d6b6eb0d8b8b0344ad4593bc75317c7"
+      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.5.0/taskshoot-aarch64-apple-darwin.tar.xz"
+      sha256 "bd72b5cfca110f3981f517a30a3a761de0c234ab204eafa1ed930e10d75e7f1f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.4.0/taskshoot-x86_64-apple-darwin.tar.xz"
-      sha256 "696958f6089fc696418a355bb6b44de31696d0a75b58b67130bbb0b4fe469df5"
+      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.5.0/taskshoot-x86_64-apple-darwin.tar.xz"
+      sha256 "f45f22ebcb5ee5d6c7c4d439512e744410e7aaf7101d675cfc1bfaecce0b6c89"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.4.0/taskshoot-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cca200462d5d518e9f0ab12c397b809e76f0931d9749c13692c728758156c2d4"
+      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.5.0/taskshoot-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "20ec3aad14996c812b61d9d1a874c4fdc58afbd850ce2b63ae6ef7d95dbc35f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.4.0/taskshoot-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8ab48effae9392aca5c788c9cdeb0c4ce70274987ec809e2829e8c49a16bd6ab"
+      url "https://github.com/cyberneura/taskshoot-cli/releases/download/v0.5.0/taskshoot-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d62215bd18110ff5451c58af4989b31e5edaafa8479ec9c74a4b3b2b0aff6666"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
