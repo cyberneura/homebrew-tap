@@ -14,6 +14,14 @@ brew install cyberneura/tap/taskshoot
 
 ## Casks
 
+### Mullion
+
+Frameless browser window for leaving a page playing (macOS).
+
+```shell
+brew install --cask cyberneura/tap/mullion
+```
+
 ### QueryFolio
 
 Multi-purpose SQL GUI client (macOS).
