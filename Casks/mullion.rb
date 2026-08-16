@@ -1,6 +1,6 @@
 cask "mullion" do
-  version "0.1.3"
-  sha256 "550843ec0c5da7f675ca5b7a61bc30ba59a267a5413de4295ebd6f7d5702e4ad"
+  version "0.2.0"
+  sha256 "ffbd8fde31c812d8db42e9ae92f2a588a6607dccfef45e59820fc5393b0dd650"
 
   url "https://github.com/cyberneura/mullion/releases/download/v#{version}/mullion-#{version}-universal.dmg"
   name "Mullion"
