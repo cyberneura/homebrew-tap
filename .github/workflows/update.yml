@@ -32,6 +32,7 @@ jobs:
         run: scripts/update.py
 
       - name: Commit
+        id: commit
         run: |
           if git diff --quiet; then
             echo "nothing to commit"
@@ -41,10 +42,46 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # One commit per file, so that `git log Casks/foo.rb` reads as that
           # cask's history rather than as a list of days on which something moved.
+          moved=""
           for file in $(git diff --name-only); do
             version=$(sed -n 's/^ *version "\(.*\)"/\1/p' "$file" | head -1)
             name=$(basename "$file" .rb)
             git add "$file"
             git commit -m "$name $version"
+            moved="${moved:+$moved, }$name $version"
           done
           git push
+          echo "moved=$moved" >> "$GITHUB_OUTPUT"
+
+      # Announced only when something moved, and only after the push: an
+      # announcement of an update that is not in the tap yet sends people to fetch
+      # something that is not there.
+      #
+      # Neither of these may fail the run. The tap is updated either way, and a
+      # webhook that is down is not a reason to look at a red workflow.
+      - name: Say so
+        if: steps.commit.outputs.moved != ''
+        continue-on-error: true
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          ALEXA_WEBHOOK_TOKEN: ${{ secrets.ALEXA_WEBHOOK_TOKEN }}
+          MOVED: ${{ steps.commit.outputs.moved }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -n "$SLACK_WEBHOOK_URL" ]; then
+            jq -n --arg text "Homebrew tap updated: ${MOVED}. <${RUN_URL}|Detail>" \
+              '{channel: "C06TSP3NVJL", username: "Homebrew tap", icon_emoji: ":beer:", text: $text}' \
+              | curl -sS -X POST -H 'Content-Type: application/json' -d @- "$SLACK_WEBHOOK_URL"
+          else
+            echo "::notice::SLACK_WEBHOOK_URL is not set; not announcing to Slack"
+          fi
+
+          if [ -n "$ALEXA_WEBHOOK_TOKEN" ]; then
+            jq -n --arg text "Homebrew tap updated. ${MOVED}." \
+              '{device: "書斎 Echo Dot", text: $text}' \
+              | curl -sS -X POST -H 'Content-Type: application/json' \
+                  -H "Authorization: Bearer $ALEXA_WEBHOOK_TOKEN" \
+                  -d @- "https://alexa-webhook.ytyng.com/speak"
+          else
+            echo "::notice::ALEXA_WEBHOOK_TOKEN is not set; not speaking"
+          fi
