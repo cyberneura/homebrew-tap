@@ -1,0 +1,50 @@
+name: Update
+
+# The tap keeps itself current: it asks each project for its latest release
+# rather than each project pushing here. Pushing would mean giving every project
+# a token that can write to this repository; asking needs nothing beyond the
+# token Actions already hands a workflow over its own repository.
+on:
+  schedule:
+    # Hourly. A tap that is an hour behind is a tap that works; the trade is
+    # against handing out credentials.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Point every cask and formula at the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/update.py
+
+      - name: Commit
+        run: |
+          if git diff --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # One commit per file, so that `git log Casks/foo.rb` reads as that
+          # cask's history rather than as a list of days on which something moved.
+          for file in $(git diff --name-only); do
+            version=$(sed -n 's/^ *version "\(.*\)"/\1/p' "$file" | head -1)
+            name=$(basename "$file" .rb)
+            git add "$file"
+            git commit -m "$name $version"
+          done
+          git push
