@@ -7,7 +7,7 @@ class Killdeer < Formula
   on_macos do
     on_arm do
       url "https://github.com/cyberneura/killdeer/releases/download/v0.2.0/killdeer-macos.zip"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "b577554a375bb8d8a753e021d95b41afd93f31fb2020ceb851f69c09d36d87d2"
     end
   end
 
