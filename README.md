@@ -38,6 +38,22 @@ Screenshot capture and annotation app (macOS).
 brew install --cask cyberneura/tap/flashcap
 ```
 
+### Astragal
+
+Lightweight terminal with a menu bar drop-down (macOS).
+
+```shell
+brew install --cask cyberneura/tap/astragal
+```
+
+### Octetly
+
+LAN scanner that lists the hosts on the network (macOS).
+
+```shell
+brew install --cask cyberneura/tap/octetly
+```
+
 ### ArcVault
 
 Mac archiver that produces zip files without garbled names on Windows.
