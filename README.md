@@ -12,15 +12,6 @@ Taskshoot task operations CLI (AI-agent friendly).
 brew install cyberneura/tap/taskshoot
 ```
 
-### killdeer
-
-Finds runaway CPU processes and disconnected Chrome helpers (macOS, Apple
-Silicon only).
-
-```shell
-brew install cyberneura/tap/killdeer
-```
-
 ## Casks
 
 ### Mullion
@@ -53,6 +44,15 @@ Lightweight terminal with a menu bar drop-down (macOS).
 
 ```shell
 brew install --cask cyberneura/tap/astragal
+```
+
+### Killdeer
+
+Finds runaway CPU processes and disconnected Chrome helpers, from the menu bar.
+Installs the `killdeer` command line tool alongside the app (macOS).
+
+```shell
+brew install --cask cyberneura/tap/killdeer
 ```
 
 ### Octetly
