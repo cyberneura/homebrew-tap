@@ -1,6 +1,6 @@
 cask "pullkit" do
-  version "0.2.0"
-  sha256 "8832bfdf714ed4be59a78b4b1bb7d3ccc80e210b9130667a9201040c6c32338d"
+  version "0.2.1"
+  sha256 "b059b359ebb0eed50f300b256dbad70d4712c50f955a2ed4ad51bae539ab78a2"
 
   url "https://github.com/cyberneura/pullkit/releases/download/v#{version}/pullkit-v#{version}-aarch64-apple-darwin.tar.gz"
   name "Pullkit"
