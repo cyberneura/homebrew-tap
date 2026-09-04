@@ -13,7 +13,7 @@ cask "icontuck" do
   end
 
   # Deployment target is macOS 15.0.
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Icontuck.app"
 
