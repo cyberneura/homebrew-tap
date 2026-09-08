@@ -76,3 +76,11 @@ only points at a download URL, so the tap owner and the release owner do not
 have to match — but this tap still owns the cask: version bumps, checksums and
 any change of download location have to be applied here, and they will not
 follow an upstream release automatically.
+
+### Vocelo
+
+Menu bar push-to-talk dictation that types into the focused app (macOS).
+
+```shell
+brew install --cask cyberneura/tap/vocelo
+```
