@@ -1,6 +1,6 @@
 cask "clipboard-palette" do
-  version "0.1.1"
-  sha256 "32c4883d52094c3cc56ca077e814575c9aa0974f91d40151d845f8a06ae5aba9"
+  version "0.1.3"
+  sha256 "9d903a80dd47c5ab116721824ef0f19990040d115103fe5f5bdbe0b2ea14872c"
 
   url "https://github.com/ytyng/clipboard-palette/releases/download/v#{version}/clipboard-palette_#{version}_universal.dmg"
   name "Clipboard Palette"
