@@ -22,7 +22,7 @@ Frameless browser window for leaving a page playing (macOS).
 brew install --cask cyberneura/tap/mullion
 ```
 
-### QueryFolio
+### Queryfolio
 
 Multi-purpose SQL GUI client (macOS).
 
