@@ -1,6 +1,6 @@
 cask "arcvault" do
-  version "0.1.2"
-  sha256 "cfe7a589cee3cb3492669fd446f34005c6fbfaf35e1be9833687b6aced04024c"
+  version "0.2.0"
+  sha256 "63a243d5a6850f5c62e870edacd34aed64fcdc50f41a76dd2c44677d36bc616e"
 
   # tap のオーナー (cyberneura) と配布元のオーナー (ytyng) は違ってよい。
   # cask は URL を参照するだけで、リポジトリの所属は問わない。
