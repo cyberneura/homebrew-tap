@@ -1,6 +1,6 @@
 cask "queryfolio" do
-  version "0.3.1"
-  sha256 "0124f2c7f3f911b87b2028834505a6601ca5e574e9e6fbbd620c866af9aa7bf7"
+  version "0.4.0"
+  sha256 "ceb5e0af8dca1319151c4ba768aac1294330a393a4ccf5b4e7e9d157ec6a66fc"
 
   url "https://github.com/cyberneura/queryfolio/releases/download/v#{version}/Queryfolio_#{version}_universal.dmg"
   name "Queryfolio"
