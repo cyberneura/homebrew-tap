@@ -1,6 +1,6 @@
 cask "vocelo" do
-  version "0.3.0"
-  sha256 "4f843676e378eb83d87ac8ef05f654382f51998632a2a27919c9be2790732963"
+  version "0.4.0"
+  sha256 "1cdb7c85875824ba5e93f1bcf7a866345818a218051307261ba09b0970c22c9d"
 
   url "https://github.com/cyberneura/vocelo/releases/download/v#{version}/Vocelo_#{version}_universal.dmg"
   name "Vocelo"
