@@ -1,6 +1,6 @@
 cask "ambientbgm-menubar" do
-  version "0.1.0"
-  sha256 "4d3611e07ddb79ef782201bae512b32cedf3d41acfc75a607119a562b8c35115"
+  version "0.2.0"
+  sha256 "e67965fa0f9ab08ecf942ae71fe4012b38055bee87d99fe36277d9f2208bd5de"
 
   url "https://github.com/cyberneura/ambientbgm-menubarapp/releases/download/v#{version}/AmbientBGMMenubar_#{version}_universal.dmg"
   name "AmbientBGM Menubar"
