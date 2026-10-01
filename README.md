@@ -4,6 +4,14 @@ Homebrew tap for Cyberneura tools.
 
 ## Formulae
 
+### killdeer
+
+macOS process monitor and Chrome helper cleaner.
+
+```shell
+brew install cyberneura/tap/killdeer
+```
+
 ### taskshoot
 
 Taskshoot task operations CLI (AI-agent friendly).
