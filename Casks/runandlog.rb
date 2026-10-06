@@ -1,6 +1,6 @@
 cask "runandlog" do
-  version "0.9.0"
-  sha256 "3ccc5311f32c48f172ececdd7fa1417f5f41d70e921d28d85863907460b5c0bf"
+  version "0.10.0"
+  sha256 "ab011dccdc7955fe8876b27bf950e24806c20dff58fe12d81601e6de3f277e6d"
 
   url "https://github.com/cyberneura/runandlog/releases/download/v#{version}/runandlog-v#{version}-aarch64-apple-darwin.tar.gz"
   name "Run and Log"
