@@ -92,3 +92,11 @@ Menu bar player for [ambientbgm.com](https://ambientbgm.com) (macOS).
 ```shell
 brew install --cask cyberneura/tap/ambientbgm-menubar
 ```
+
+### parun
+
+Runs shell commands in parallel, each in its own pane of the terminal.
+
+```shell
+brew install --cask cyberneura/tap/parun
+```
