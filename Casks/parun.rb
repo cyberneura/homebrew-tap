@@ -1,6 +1,6 @@
 cask "parun" do
-  version "0.1.0"
-  sha256 "9458637f64023dba0d8b72e742fbb2e5de30d70d82e4ade9a7f4b9965b516872"
+  version "0.2.0"
+  sha256 "8f6a88491c7d7463c14973efe297d529c8dfa219d05890ce96d7e9800fdf2b6b"
 
   url "https://github.com/cyberneura/parun/releases/download/v#{version}/parun-v#{version}-aarch64-apple-darwin.tar.gz"
   name "parun"
