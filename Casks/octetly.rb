@@ -1,6 +1,6 @@
 cask "octetly" do
-  version "0.8.0"
-  sha256 "e43b40b388565dd990e1ecaa9918befd1b4885b69654b443fe551c1946f621e2"
+  version "0.8.1"
+  sha256 "7f88fdabd208aa470469c5597e110c2c3a297b50f560f8dba81935ff69aec626"
 
   url "https://github.com/cyberneura/octetly/releases/download/v#{version}/Octetly_#{version}_universal.dmg"
   name "Octetly"
