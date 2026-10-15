@@ -100,3 +100,12 @@ Runs shell commands in parallel, each in its own pane of the terminal.
 ```shell
 brew install --cask cyberneura/tap/parun
 ```
+
+### askdown
+
+Asks a person the questions written in a Markdown file, in a desktop window; for AI
+agents that need a human answer (macOS).
+
+```shell
+brew install --cask cyberneura/tap/askdown
+```
