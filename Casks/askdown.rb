@@ -7,12 +7,12 @@ cask "askdown" do
   desc "Asks a person the questions written in a Markdown file, in a desktop window"
   homepage "https://github.com/cyberneura/askdown"
 
-  depends_on arch: :arm64
-
   livecheck do
     url :url
     strategy :github_latest
   end
+
+  depends_on arch: :arm64
 
   # The archive holds a directory, and a cask does not descend into it: the path
   # has to name it. Keep this in step with how the workflow packages the build.
