@@ -12,6 +12,14 @@ Taskshoot task operations CLI (AI-agent friendly).
 brew install cyberneura/tap/taskshoot
 ```
 
+### piigrep
+
+Find personal information (emails, phone numbers, My Numbers, card numbers, and with `--fm` names and addresses) in files, on-device.
+
+```shell
+brew install cyberneura/tap/piigrep
+```
+
 ## Casks
 
 ### Mullion
