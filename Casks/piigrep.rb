@@ -1,6 +1,6 @@
 cask "piigrep" do
-  version "0.1.1"
-  sha256 "77cacf4ca911f60241a32e4dbda98e61d77392b980341d24853a5393f1663d7c"
+  version "0.1.2"
+  sha256 "bf40722716818e6918992e427ff7fc72b8dc4a5ea23f8dddb1a2f549c04e303f"
 
   url "https://github.com/cyberneura/piigrep/releases/download/v#{version}/piigrep-v#{version}-aarch64-apple-darwin.tar.gz"
   name "piigrep"
