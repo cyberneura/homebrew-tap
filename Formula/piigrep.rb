@@ -1,7 +1,7 @@
 class Piigrep < Formula
   desc "Find personal information in files, on-device"
   homepage "https://github.com/cyberneura/piigrep"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   # Apple Silicon only on macOS: --fm needs macOS 27, which Intel Macs do not
@@ -16,8 +16,8 @@ class Piigrep < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/cyberneura/piigrep/releases/download/v0.1.1/piigrep-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "77cacf4ca911f60241a32e4dbda98e61d77392b980341d24853a5393f1663d7c"
+      url "https://github.com/cyberneura/piigrep/releases/download/v0.1.2/piigrep-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "bf40722716818e6918992e427ff7fc72b8dc4a5ea23f8dddb1a2f549c04e303f"
     end
   end
 
@@ -25,8 +25,8 @@ class Piigrep < Formula
     depends_on arch: :x86_64
 
     on_intel do
-      url "https://github.com/cyberneura/piigrep/releases/download/v0.1.1/piigrep-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d7d2c76af518d921effe76af73af91473f4c7f37fa128c54917577e0d1855adc"
+      url "https://github.com/cyberneura/piigrep/releases/download/v0.1.2/piigrep-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4f9c02286ddc82bd06ce0def78adc337077d887ea6e11950f274b4c0bda0487a"
     end
   end
 
