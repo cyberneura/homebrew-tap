@@ -22,6 +22,8 @@ class Piigrep < Formula
   end
 
   on_linux do
+    depends_on arch: :x86_64
+
     on_intel do
       url "https://github.com/cyberneura/piigrep/releases/download/v0.1.0/piigrep-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "fac69675689d01fb64ad80762b2ac556b477f246b222edd4f3b3e46138376ddc"
