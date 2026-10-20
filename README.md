@@ -18,6 +18,8 @@ Find personal information (emails, phone numbers, My Numbers, card numbers, and 
 
 ```shell
 brew install cyberneura/tap/piigrep
+# or, on macOS, the cask
+brew install --cask cyberneura/tap/piigrep
 ```
 
 ## Casks
