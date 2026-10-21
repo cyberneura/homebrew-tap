@@ -1,6 +1,6 @@
 cask "killdeer" do
-  version "0.4.0"
-  sha256 "8f235f3880be3f269930959b49127aa40cd7333ef319ef621f60197ad57fddff"
+  version "0.5.0"
+  sha256 "f17c51c0b0a797344442c064ae78124525afe2c121364997569ec87a9220a1d4"
 
   url "https://github.com/cyberneura/killdeer/releases/download/v#{version}/Killdeer_#{version}_universal.dmg"
   name "Killdeer"
