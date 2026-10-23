@@ -1,9 +1,9 @@
 cask "flashcap" do
-  version "0.8.2"
-  sha256 "0a8c9e56ad1945e6063f78c3f09d94e45dbfaaf014b0cd2429a11b5809113f6d"
+  version "0.8.3"
+  sha256 "2a265a1745b25d7856bc38d03334fa48e16188eb1971e90e369d0388fdcb1e9a"
 
-  url "https://github.com/cyberneura/flashcap/releases/download/v#{version}/flashcap_#{version}_universal.dmg"
-  name "FlashCap"
+  url "https://github.com/cyberneura/flashcap/releases/download/v#{version}/Flashcap_#{version}_universal.dmg"
+  name "Flashcap"
   desc "Screenshot capture and annotation app"
   homepage "https://github.com/cyberneura/flashcap"
 
@@ -12,7 +12,7 @@ cask "flashcap" do
     strategy :github_latest
   end
 
-  app "flashcap.app"
+  app "Flashcap.app"
 
   # bundle identifier (com.cyberneura.flashcap) は tauri.conf.json の `identifier`
   # に一致する (Tauri がそのまま CFBundleIdentifier に入れる)。
