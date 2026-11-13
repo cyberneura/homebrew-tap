@@ -1,6 +1,6 @@
 cask "dagscape" do
-  version "0.4.0"
-  sha256 "35b14e7afbd658ab926146f2c676cfc8a1fba3ce960e8c0d543faaf0c4e31a1e"
+  version "0.4.1"
+  sha256 "7a122534d3a9fe631a6f25e33c02bdf683f3ba6f1612fcf215f3f6086085ccbb"
 
   url "https://github.com/cyberneura/dagscape/releases/download/v#{version}/Dagscape_#{version}_universal.dmg"
   name "Dagscape"
