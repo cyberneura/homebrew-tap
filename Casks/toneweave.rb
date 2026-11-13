@@ -1,6 +1,6 @@
 cask "toneweave" do
-  version "0.2.1"
-  sha256 "40574d11607553514bece8c2f4355ff8bd57f217b8be1707e4106f4bf4bac2de"
+  version "0.2.2"
+  sha256 "542bced561341c1f5328413c05f292d97811e7e6ff318528e88df5964c9a8048"
 
   url "https://github.com/cyberneura/toneweave/releases/download/v#{version}/Toneweave_#{version}_universal.dmg"
   name "Toneweave"
