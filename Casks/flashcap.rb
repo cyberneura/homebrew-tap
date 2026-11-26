@@ -1,6 +1,6 @@
 cask "flashcap" do
-  version "0.20.0"
-  sha256 "1688efdfe30a667314c700315d8989f9519f948bcb31d0de0c0e5a36dc09e474"
+  version "0.21.1"
+  sha256 "a00f32bdde95156a075c9d80cd86db4184012280b918703662f5467c40414626"
 
   url "https://github.com/cyberneura/flashcap/releases/download/v#{version}/Flashcap_#{version}_universal.dmg"
   name "Flashcap"
