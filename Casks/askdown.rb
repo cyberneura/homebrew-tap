@@ -1,6 +1,6 @@
 cask "askdown" do
-  version "0.5.1"
-  sha256 "687fc8e75da2d9467d3ec7d3b82247e066319b360e2f9f4293b492d575cd5270"
+  version "0.5.2"
+  sha256 "d9fe3647706b9a7a711f352ba34f022ff9867fde9ae3f5efa15f99be9885a2ea"
 
   url "https://github.com/cyberneura/askdown/releases/download/v#{version}/askdown-v#{version}-aarch64-apple-darwin.tar.gz"
   name "askdown"
