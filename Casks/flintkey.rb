@@ -12,6 +12,8 @@ cask "flintkey" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Flintkey.app"
 
   # ~/.config/flintkey is left alone: it holds the user's own settings, often a Git checkout.
