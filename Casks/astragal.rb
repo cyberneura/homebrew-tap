@@ -1,6 +1,6 @@
 cask "astragal" do
-  version "1.3.1"
-  sha256 "ce29df08522ee9187cdcd3b50191bfcae1766f0f3b13fa368b590b4d9db247ac"
+  version "1.4.0"
+  sha256 "41976e484aa4d3462be92f89880f013c7ba2fdddfd12ca18e2634045716938c4"
 
   url "https://github.com/cyberneura/astragal/releases/download/v#{version}/Astragal_#{version}_universal.dmg"
   name "Astragal"
