@@ -1,6 +1,6 @@
 cask "kayoiji" do
-  version "0.6.1"
-  sha256 "21ad982375b97d72485abebd1e41bf41c8d6950788ccee7651fd07d811f2f36b"
+  version "0.8.0"
+  sha256 "82525c9b03debe889ae44e25f88727711ee76aae7e3742f5ed64149cc970076e"
 
   url "https://github.com/cyberneura/kayoiji/releases/download/v#{version}/Kayoiji_#{version}_aarch64.zip"
   name "Kayoiji"
