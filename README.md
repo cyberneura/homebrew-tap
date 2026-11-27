@@ -24,6 +24,15 @@ brew install --cask cyberneura/tap/piigrep
 
 ## Casks
 
+### Kayoiji
+
+Japanese input method that types Japanese and English without switching modes (macOS, Apple silicon).
+After installing, add Kayoiji in System Settings > Keyboard > Input Sources.
+
+```shell
+brew install --cask cyberneura/tap/kayoiji
+```
+
 ### Flintkey
 
 Keyboard launcher whose settings live in files (macOS).
