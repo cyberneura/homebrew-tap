@@ -24,6 +24,14 @@ brew install --cask cyberneura/tap/piigrep
 
 ## Casks
 
+### Flintkey
+
+Keyboard launcher whose settings live in files (macOS).
+
+```shell
+brew install --cask cyberneura/tap/flintkey
+```
+
 ### Mullion
 
 Frameless browser window for leaving a page playing (macOS).
