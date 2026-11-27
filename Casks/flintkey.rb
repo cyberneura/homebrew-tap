@@ -1,6 +1,6 @@
 cask "flintkey" do
-  version "0.10.0"
-  sha256 "a73146634f0537b154a6a876359105b140c096c9d5db21b01ec5f56733d4c125"
+  version "0.10.3"
+  sha256 "b82516db33bcaa3f3f7fa97cd3329870336235c4e654382402030cb283d82dea"
 
   url "https://github.com/cyberneura/flintkey/releases/download/v#{version}/Flintkey_#{version}_universal.dmg"
   name "Flintkey"
